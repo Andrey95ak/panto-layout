@@ -1,0 +1,53 @@
+.info-hint {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 12px;
+
+    background-image: url('./assets/icons/hint.svg');
+    height: 56px;
+    width: 112px;
+}
+
+.info-hint__radio {
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.info-hint__radio:checked + .info-hint__radio-fake {
+    background-image: url('./assets/icons/checkbox.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.info-hint__radio-fake {
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    background: gray;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    &--orange {
+        background: var(--accent);
+    }
+
+    &--biruza {
+        background: var(--ui-biruza);
+    }
+
+    &--gray {
+        background: var(--ui-gray);
+    }
+}

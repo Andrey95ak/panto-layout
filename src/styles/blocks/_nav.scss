@@ -1,0 +1,22 @@
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap: 20px;
+}
+
+.logo {
+    align-self: center;
+    font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+    color: #fff !important;
+}
+
+.nav__btn {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}

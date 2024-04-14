@@ -1,0 +1,49 @@
+.nav-list {
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link--drodown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    &::after {
+        content: url('./assets/icons/arrow-down.svg');
+        height: 18px;
+    }
+}
+
+.dropdown__nav {
+    opacity: 0;
+    width: 160px;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 100%;
+    transition: all 0.2s ease-in;
+    padding-top: 10px;
+    transform: translate(0%, 10%);
+}
+
+.nav-list__item:hover .dropdown__nav {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0%, 0%);
+}

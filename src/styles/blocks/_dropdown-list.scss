@@ -1,0 +1,25 @@
+.dropdown__list {
+    display: grid;
+    gap: 16px;
+    padding: 20px;
+    background-color: var(--footer-bg);
+    border-radius: 16px;
+    font-size: 16px;
+
+    a {
+        color: var(--footer-text-color);
+        transition: opacity 0.1s ease-in;
+
+        &:hover {
+            color: var(--accent);
+            opacity: 0.8;
+        }
+    }
+}
+
+.dropdown__item {
+
+    &:hover {
+        display: block;
+    }
+}

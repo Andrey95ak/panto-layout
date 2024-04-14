@@ -1,0 +1,26 @@
+@import './fonts/Gilroy/stylesheet.css';
+@import 'swiper/css';
+
+// Base
+@import './styles/base/base';
+@import './styles/base/reset';
+@import './styles/base/vars';
+
+// Blocks
+@import './styles/blocks/header';
+@import './styles/blocks/nav';
+@import './styles/blocks/nav-list';
+@import './styles/blocks/cart';
+@import './styles/blocks/search-form';
+@import './styles/blocks/info-dot';
+@import './styles/blocks/info-hint';
+@import './styles/blocks/benefits';
+@import './styles/blocks/benefit';
+@import './styles/blocks/products';
+@import './styles/blocks/read-more';
+@import './styles/blocks/tab-controls';
+@import './styles/blocks/card';
+@import './styles/blocks/slider';
+@import './styles/blocks/footer';
+@import './styles/blocks/dropdown-list';
+@import './styles/blocks/mobile-nav-list';
